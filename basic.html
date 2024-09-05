@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+       //inmediated invouct function expres
+       (function(){
+        console.log("My first IIFE");
+       })();
+
+       // d = document, w = window, console = c
+       (function(d,w,c){
+        console.log("My second IIFE");
+        console.log(d);
+        console.log(w);
+        console.log(c);
+        c.log("I'm a console");
+        })(document,window,console);
+
+        //CCroford
+        ((function(){
+        c.log("Croford version");
+        })());
+
+        //Unary
+        +function(){
+        c.log("Unary version");
+        }();
+
+        //Facebook
+        //CCroford
+        !function(){
+        c.log("Croford version");
+        }();
+
+
+
+        //window == global, document = HTML
+    </script>
+</body>
+
+</html>
